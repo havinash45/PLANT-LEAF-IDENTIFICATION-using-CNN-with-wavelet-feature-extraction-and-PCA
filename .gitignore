@@ -1,0 +1,74 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+backend-python/venv/
+backend-python/.venv/
+ml-service/venv/
+ml-service/.venv/
+
+# Backend Uploads & Cache
+backend-python/uploads/*
+!backend-python/uploads/.gitkeep
+backend-python/__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ML Service Models & Data
+ml-service/__pycache__/
+ml-service/*.pyc
+ml-service/models/*.h5
+!ml-service/models/.gitkeep
+ml-service/data/
+ml-service/sample_test_images/
+
+# Frontend (Node / Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Config
+.env
+.env.local
+.env.*.local
+*.log
+
+# IDE & Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating System
+.DS_Store
+Thumbs.db
+Desktop.ini
