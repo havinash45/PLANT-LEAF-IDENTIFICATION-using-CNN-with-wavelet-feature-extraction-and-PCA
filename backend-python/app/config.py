@@ -4,14 +4,17 @@ Application configuration loaded from environment variables and .env file.
 
 from pydantic_settings import BaseSettings
 from typing import List
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class Settings(BaseSettings):
     # Server
     server_port: int = 8081
 
     # MongoDB
-    mongodb_uri: str = "mongodb+srv://hemanthjanapana:hemu4125@cluster0.fsdukc9.mongodb.net/leafai_hub"
+    mongodb_uri: str = os.getenv("MONGODB_URI")
     mongodb_database: str = "leafai_hub"
 
     # JWT
